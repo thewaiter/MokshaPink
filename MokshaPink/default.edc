@@ -15910,7 +15910,11 @@ programs {
 
 /////////////////////////////////////////////////////////////////////////////
 /*** MOD: SYSTRAY ***/
-
+   #define FIXED_SIZE(_WIDTH, _HEIGHT) \
+   min: _WIDTH _HEIGHT; max: _WIDTH _HEIGHT; fixed: 1 1;
+   images.image: "systray_expand.png" COMP;
+   images.image: "systray_expand_vert.png" COMP;
+   
    group {
       name: "e/modules/systray/main";
       alias: "e/modules/systray/main/default";
@@ -15934,6 +15938,23 @@ programs {
                color: 255 0 0 128;
             }
          }
+        part { name: "expand_butt";
+         scale: 1;
+         description { state: "default" 0.0;
+            rel1.relative: 1.0 0.0;
+            rel1.offset: -25 0;
+            FIXED_SIZE(15, 15)
+            image.normal: "systray_expand.png";
+            fill.smooth: 1;
+         }
+         description { state: "vertical" 0.0;
+            rel1.relative: 0.0 1.0;
+            rel1.offset: 0 -25;
+            FIXED_SIZE(15, 15)
+            image.normal: "systray_expand_vert.png";
+            fill.smooth: 1;
+         }
+      }
          part { name: "e.size"; type: RECT; mouse_events: 0;
          description { state: "default" 0.0;
             rel1.offset: 10 0;
