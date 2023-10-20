@@ -41099,7 +41099,7 @@ programs {
             max: 48 48;
             aspect: 1.0 1.0;
          }
-         description { state: "higher" 0.0;
+         description { state: "move_down" 0.0;
              inherit: "default" 0.0;
              rel1.relative: 0.2 0.15;
              rel2.relative: 0.8 1.15;
@@ -41147,7 +41147,7 @@ programs {
            signal: "blink";
            source: "";
            action: STATE_SET "default" 0.0;
-           after: "big";
+           after: "down";
            target: "base";
           }
     program
@@ -41155,13 +41155,13 @@ programs {
            name: "normal";
            action: STATE_SET "default" 0.0;
            target: "base";
-           after: "big";
+           after: "down";
            transition: DECELERATE 0.3;
           }
     program
           {
-           name: "big";
-           action: STATE_SET "higher" 0.0;
+           name: "down";
+           action: STATE_SET "move_down" 0.0;
            target: "base";
            after: "normal";
            transition: ACCELERATE 0.1;
