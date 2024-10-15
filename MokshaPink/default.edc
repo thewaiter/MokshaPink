@@ -1122,7 +1122,7 @@ group {
                   to_x: "e.text.title";
                   to_y: "title_back";
                   relative: 1.0 1.0;
-                  offset: 0 0;
+                  offset: 0 -3;
                }
                color_class: "border_title_active";
                text {
@@ -3232,7 +3232,7 @@ group {
                align: 0.0 0.0;
                rel1 {
                   relative: 1.0 0.0;
-                  offset: 9 2;
+                  offset: 9 4;
                   to_x: "icon_area";
                }
                rel2 {
@@ -3243,7 +3243,7 @@ group {
                color_class: "border_title";
                text {
                   font: "Sans:style=Bold";
-                  size: 12;
+                  size: 10;
                   min: 0 1;
                   align: 0.0 0.0;
                   text_class: "title_bar";
@@ -3548,13 +3548,13 @@ group {
                   to_x: "e.text.title";
                   to_y: "title_back";
                   relative: 0.0 1.0;
-                  offset: -1 0;
+                  offset: -1 -4;
                }
                rel2 {
                   to_x: "e.text.title";
                   to_y: "title_back";
                   relative: 1.0 1.0;
-                  offset: 0 1;
+                  offset: 0 -3;
                }
                color_class: "border_title_active";
                text {
