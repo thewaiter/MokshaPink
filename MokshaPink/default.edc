@@ -47,7 +47,7 @@ data {
 	item: "theme/author"	"Bodhi Team";
 	item: "theme/license"	"BSD Artistic License";
 	item: "gtk-theme"		"MokshaPink-GTK";
-	item: "icon-theme"		"MokshaPink-Icons";
+	item: "icon-theme"		"MokshaPink";
 	item: "version"			"110";
 }
 
