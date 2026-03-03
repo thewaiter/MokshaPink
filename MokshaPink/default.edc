@@ -53,6 +53,7 @@ data {
 
 collections {
 #include "mokshapreview.edc"
+#include "notification.edc"
 }
 
 /* Specturm used in all the gradient icons
