@@ -41515,13 +41515,13 @@ programs {
       part { name: "notification.swallow.app_icon"; type: SWALLOW; mouse_events: 0;
          scale: 1;
          description { state: "default" 0.0;
-            align: 0.0 0.5;
+            align: 0.0 0.2;
             aspect: 1.0 1.0; aspect_preference: BOTH;
-            rel.to: "base";
+            //~ rel.to: "base";
             rel1.to_y: "notification.textblock.message";
             rel1.offset: 12 0;
-            rel2.offset: 12 -13;
-            rel2.relative: 0.0 1.0;
+            rel2.offset: 12 0;
+            //~ rel2.relative: 0.0 1.0;
             min: 24 24;
             fixed: 1 1;
             offscale;
