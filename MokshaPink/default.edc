@@ -6718,7 +6718,7 @@ group {
                }
                image {
                   normal: "menu_sel_bg.png";
-                  border: 8 8 5 9;
+                  border: 9 9 9 9;
                }
             }
             description {
