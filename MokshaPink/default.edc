@@ -41638,8 +41638,9 @@ programs {
       }
 
       part { name: "close";
+         scale: 1;
          description { state: "default" 0.0;
-            image.normal: "bd_button_close_shadow.png";
+            image.normal: "bd_button_close_focused.png";
             rel.to: "notification.event.close";
             min: 15 15;
             max: 15 15;
