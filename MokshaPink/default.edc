@@ -41561,7 +41561,7 @@ programs {
          multiline: 1;
          description { state: "default" 0.0;
             align: 0.0 0.0;
-            rel.to: "base";
+            //~ rel.to: "base";
             rel1.to_x: "notification.swallow.app_icon";
             rel1.to_y: "notification.text.title";
             rel1.relative: 1.0 1.0;
@@ -41570,7 +41570,7 @@ programs {
             rel2.to_y: "notification.swallow.actions";
             rel2.relative: 1.0 0.0;
             text { style: "notification_style";
-               min: 0 1;
+               min: 0 0;
             }
             fixed: 1 1;
             offscale;
